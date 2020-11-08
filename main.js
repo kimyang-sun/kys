@@ -1,4 +1,14 @@
 "use strict";
+// Loading
+const html = document.querySelector("html");
+window.addEventListener("load", () => {
+  html.classList.add("loaded");
+  setTimeout(() => {
+    html.style.overflowY = "auto";
+    window.scrollTo(0, 0);
+  }, 2000);
+});
+
 // Home observer 홈 섹션 옵저버 적용
 const home = document.querySelector("#home");
 const homeBg = document.querySelector(".home__bg");

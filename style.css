@@ -114,6 +114,125 @@ section > p:not(.hello) {
   color: #777;
 }
 
+/* Loading */
+html {
+  overflow-y: hidden;
+}
+
+.loader-wrap {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 10001;
+}
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.loader::after {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: -20px;
+  right: -20px;
+  bottom: -20px;
+  border: 4px solid transparent;
+  border-top-color: var(--main-color);
+  border-radius: 100%;
+  animation: spin 1s infinite;
+  animation-timing-function: linear;
+}
+
+.loader img {
+  display: block;
+  width: 65px;
+}
+
+.loader__smile {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3.75rem;
+  opacity: 0;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.loader__box {
+  position: absolute;
+  top: 0;
+  width: 51%;
+  height: 100%;
+  background-color: #fff;
+  z-index: -1;
+}
+
+.loader__left {
+  left: 0;
+}
+
+.loader__right {
+  right: 0;
+}
+
+/* Loaded */
+.loaded .loader-wrap {
+  visibility: hidden;
+  transition: visibility 0.3s 2.5s;
+}
+
+.loaded .loader > img,
+.loaded .loader::after {
+  opacity: 0;
+  transition: all 0.5s ease-out;
+}
+
+.loaded .loader__smile {
+  animation: fade-in-out 2s 1;
+  animation-delay: 0.5s;
+}
+
+.loaded .loader__box {
+  transition: all 1s 2s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.loaded .loader__left {
+  transform: translateX(-100%);
+}
+
+.loaded .loader__right {
+  transform: translateX(100%);
+}
+
+@keyframes fade-in-out {
+  0% {
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 100%;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
 /* ScrollUp btn */
 .scroll-up-btn {
   font-size: 3rem;
