@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio of Kim</title>
+    <meta name="description" content="Portfolio of Kim" />
+    <meta name="author" content="Kim" />
+
+    <!-- favicon -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./img/favicon/apple-icon-180x180.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="192x192"
+      href="./img/favicon/android-icon-192x192.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./img/favicon/favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./img/favicon/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./img/favicon/favicon-16x16.png"
+    />
+    <meta
+      name="msapplication-TileImage"
+      content="./img/favicon/ms-icon-150x150.png"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Acme&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <script
+      src="https://kit.fontawesome.com/6f88dac71d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js" defer></script>
+  </head>
+  <body>
+    <!-- scrollUp button -->
+    <button type="button" class="scroll-up-btn">
+      <i class="fas fa-caret-up"></i>
+    </button>
+
+    <!-- Header -->
+    <header id="header" class="font-acme">
+      <a href="#" class="header__logo">
+        <img src="img/logo.png" alt="로고" />
+        <span>KIM</span>
+      </a>
+      <button type="button" class="header__nav-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__item active" data-link="#home">Home</li>
+          <li class="header__item" data-link="#about">About</li>
+          <li class="header__item" data-link="#work">My Works</li>
+          <li class="header__item" data-link="#contact">Contact</li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="section">
+      <div class="home__inner visible">
+        <img src="img/profile_img_2.jpg" alt="프로필 사진" class="home__img" />
+        <div class="home__text">
+          <h1 class="home__title">Portfolio of KIM</h1>
+          <h2 class="home__description">
+            안녕하세요.<br />배움을 즐기는 사람.<br />김양선입니다.
+          </h2>
+          <p>Web Publisher / Front-end</p>
+        </div>
+      </div>
+      <img src="img/scroll_down.png" alt="스크롤 다운" class="scroll-down" />
+      <p class="hello font-acme">HELLO! <span class="hello-icon">🖐</span></p>
+      <div class="home__bg"><span class="blind">홈 배경</span></div>
+    </section>
+
+    <!-- About -->
+    <section id="about" class="section con">
+      <h1>About Me</h1>
+      <p>
+        꼼꼼한 성격인 제가 가장 중요하게 여기는 것은 기본기입니다.
+        <br class="only-" />
+        항상 다음을 준비하고 공부하며 역량을 늘리고 있습니다.
+      </p>
+      <ul class="about__majors">
+        <li class="major__item">
+          <div class="major__icon"><i class="fas fa-code"></i></div>
+          <h2 class="major__title">MarkUp</h2>
+          <p class="major__description">
+            (HTML/CSS)
+            <br />
+            기본기 탄탄한 의미있는 구조 마크업,
+            <br />
+            웹 표준·웹 접근성에 대한 전반적인 이해,
+            <br />
+            유지보수를 고려한 실용적인 코드 작성,
+            <br />
+            반응형 사이트 이해 및 구현.
+          </p>
+        </li>
+        <li class="major__item">
+          <div class="major__icon"><i class="fab fa-js-square"></i></div>
+          <h2 class="major__title">JavaScript</h2>
+          <p class="major__description">
+            VanillaJS를 기본으로 한 필요한 기능 구현,
+            <br />
+            DOM 및 자바스크립트 알고리즘에 대한 이해,
+            <br />
+            JS 라이브러리의 유용한 사용
+          </p>
+        </li>
+        <li class="major__item">
+          <div class="major__icon"><i class="fas fa-mobile-alt"></i></div>
+          <h2 class="major__title">Mobile</h2>
+          <p class="major__description">
+            반응형 및 모바일 최적화 UI 구현,
+            <br />
+            Android, IOS 등
+            <br />
+            모바일 웹/앱에서의 기능 구현
+          </p>
+        </li>
+        <li class="major__item">
+          <div class="major__icon"><i class="fas fa-user-friends"></i></div>
+          <h2 class="major__title">Communication</h2>
+          <p class="major__description">
+            원활한 협업을 위한 디자인에 대한 이해,
+            <br />
+            반응형, 인터랙션 등
+            <br />
+            사용자의 니즈에 맞는 UIUX 구현,
+            <br />
+            Git 등 협업툴 사용
+          </p>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Work -->
+    <section id="work" class="section">
+      <h1>My Works</h1>
+      <p>Projects</p>
+      <div class="work__inner con">
+        <ul class="work__categories">
+          <li class="category__item">
+            <button
+              type="button"
+              class="category__btn selected"
+              data-filter="*"
+            >
+              All
+            </button>
+          </li>
+          <li class="category__item">
+            <button type="button" class="category__btn" data-filter="web">
+              Web
+            </button>
+          </li>
+          <li class="category__item">
+            <button type="button" class="category__btn" data-filter="mobile">
+              Mobile
+            </button>
+          </li>
+        </ul>
+        <ul class="work__projects">
+          <li class="project__item" data-type="mobile">
+            <a
+              href="https://kimyang-sun.github.io/shopping-list-basic/"
+              target="_blank"
+            >
+              <img
+                src="img/pj_shopping-list.jpg"
+                alt="쇼핑리스트 이미지"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>Shopping List Basic<i class="fas fa-link"></i></h3>
+                <p>
+                  쇼핑리스트 기본기능 구현
+                  <br />
+                  (JavaScript, HTML, CSS)
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item" data-type="web, mobile">
+            <a href="https://kimyang-sun.github.io/doctorpage/" target="_blank">
+              <img
+                src="img/pj_doctorpage.jpg"
+                alt="닥터페이지 이미지"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>DoctorPage<i class="fas fa-link"></i></h3>
+                <p>
+                  닥터페이지 웹사이트 외주 퍼블리싱
+                  <br />
+                  사이트내 모든 컨텐츠 페이지 작업
+                  <br />
+                  (HTML, CSS, jQuery)
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item" data-type="web, mobile">
+            <a href="http://www.xn--v20bz3b6xk8uxzff.com/" target="_blank">
+              <img
+                src="img/pj_nangman.jpg"
+                alt="낭만컴퍼니 이미지"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>낭만컴퍼니<i class="fas fa-link"></i></h3>
+                <p>
+                  낭만컴퍼니 웹사이트 외주 퍼블리싱
+                  <br />
+                  사이트내 모든 컨텐츠 페이지 작업
+                  <br />
+                  (HTML, CSS, jQuery)
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item" data-type="web, mobile">
+            <a href="https://kimyang-sun.github.io/booup/" target="_blank">
+              <img
+                src="img/pj_booup.jpg"
+                alt="부업몬 이미지"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>부업몬<i class="fas fa-link"></i></h3>
+                <p>
+                  부업몬 웹사이트 외주 퍼블리싱
+                  <br />
+                  메인 페이지 퍼블리싱
+                  <br />
+                  (HTML, CSS, jQuery)
+                </p>
+              </div>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section">
+      <h1>Contact</h1>
+      <p>E-mail : cpo91@naver.com</p>
+      <ul class="contact__list">
+        <li class="contact__item">
+          <a href="https://github.com/kimyang-sun" target="_blank">
+            <div class="contact__icon">
+              <img src="img/github.png" alt="깃허브" />
+            </div>
+          </a>
+          <h3 class="contact__title">GitHub</h3>
+        </li>
+        <li class="contact__item">
+          <a href="https://kimyang-sun.tistory.com/" target="_blank">
+            <div class="contact__icon">
+              <img src="img/tistory.png" alt="티스토리" />
+            </div>
+          </a>
+          <h3 class="contact__title">Tistory</h3>
+        </li>
+        <li class="contact__item">
+          <a href="https://open.kakao.com/o/sgl3H85b" target="_blank">
+            <div class="contact__icon">
+              <img src="img/kakaotalk.png" alt="카카오톡" />
+            </div>
+          </a>
+          <h3 class="contact__title">KakaoTalk</h3>
+        </li>
+      </ul>
+      <p class="copyright">
+        본 페이지는 상업적 목적이 아닌 개인 포트폴리오용으로 제작되었습니다.
+        <br />
+        ⓒ 2020. Kimyangsun. all right reserved.
+      </p>
+    </section>
+  </body>
+</html>
