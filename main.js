@@ -35,7 +35,6 @@ const homeInnerObserver = new IntersectionObserver(callback, options);
 homeInnerObserver.observe(homeInner);
 
 // resize change height - 화면 리사이즈시 높이 변수값 변경
-
 let homeHeight = home.getBoundingClientRect().height;
 let screenHeight = window.innerHeight;
 let halfHeight = screenHeight / 2;
