@@ -126,8 +126,6 @@
           <div class="major__icon"><i class="fas fa-code"></i></div>
           <h2 class="major__title">MarkUp</h2>
           <p class="major__description">
-            (HTML/CSS)
-            <br />
             기본기 탄탄한 의미있는 구조 마크업,
             <br />
             웹 표준·웹 접근성에 대한 전반적인 이해,
@@ -145,7 +143,7 @@
             <br />
             DOM 및 자바스크립트 알고리즘에 대한 이해,
             <br />
-            JS 라이브러리의 유용한 사용
+            JS 라이브러리(React.js)의 유용한 사용
           </p>
         </li>
         <li class="major__item">
@@ -154,7 +152,7 @@
           <p class="major__description">
             반응형 및 모바일 최적화 UI 구현,
             <br />
-            모바일 웹에서의 기능 구현
+            모바일 웹, 앱에서의 기능 구현
           </p>
         </li>
         <li class="major__item">
@@ -162,8 +160,6 @@
           <h2 class="major__title">Communication</h2>
           <p class="major__description">
             원활한 협업을 위한 디자인에 대한 이해,
-            <br />
-            반응형, 인터랙션 등
             <br />
             사용자의 니즈에 맞는 UIUX 구현,
             <br />
@@ -189,25 +185,71 @@
             </button>
           </li>
           <li class="category__item">
-            <button type="button" class="category__btn" data-filter="web">
-              Web
+            <button type="button" class="category__btn" data-filter="frontend">
+              Front End
             </button>
           </li>
           <li class="category__item">
-            <button type="button" class="category__btn" data-filter="mobile">
-              Mobile
+            <button
+              type="button"
+              class="category__btn"
+              data-filter="publishing"
+            >
+              Web Publishing
             </button>
           </li>
         </ul>
         <ul class="work__projects">
-          <li class="project__item" data-type="mobile">
+          <li class="project__item" data-type="frontend">
+            <a
+              href="https://kimyang-sun.github.io/mini-youtube-react/"
+              target="_blank"
+            >
+              <img
+                src="img/pj_mini-youtube.jpg"
+                alt="project"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>Mini Youtube App<i class="fas fa-link"></i></h3>
+                <p>
+                  Youtube Data API 를 이용한
+                  <br />
+                  Youtube 영상 시청 및 검색 기능 구현
+                  <br />
+                  (React.js)
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item" data-type="frontend">
+            <a
+              href="https://kimyang-sun.github.io/shopping-list-react/"
+              target="_blank"
+            >
+              <img
+                src="img/pj_shopping-list-react.jpg"
+                alt="project"
+                class="project__img"
+              />
+              <div class="project__description">
+                <h3>Shopping List App<i class="fas fa-link"></i></h3>
+                <p>
+                  쇼핑리스트 기본기능 구현
+                  <br />
+                  (React.js)
+                </p>
+              </div>
+            </a>
+          </li>
+          <li class="project__item" data-type="frontend">
             <a
               href="https://kimyang-sun.github.io/balloon-pop/"
               target="_blank"
             >
               <img
                 src="img/pj_balloon-pop.jpg"
-                alt="물고기 잡기"
+                alt="project"
                 class="project__img"
               />
               <div class="project__description">
@@ -220,31 +262,31 @@
               </div>
             </a>
           </li>
-          <li class="project__item" data-type="mobile">
+          <li class="project__item" data-type="frontend">
             <a
               href="https://kimyang-sun.github.io/mini-clothing-store/"
               target="_blank"
             >
               <img
                 src="img/pj_mini-clothing-store.jpg"
-                alt="물고기 잡기"
+                alt="project"
                 class="project__img"
               />
               <div class="project__description">
                 <h3>Mini Clothing Store<i class="fas fa-link"></i></h3>
                 <p>
-                  카테고리 필터기능 구현
+                  온라인 쇼핑몰<br />카테고리 필터기능 구현
                   <br />
                   (JavaScript, HTML, CSS)
                 </p>
               </div>
             </a>
           </li>
-          <li class="project__item" data-type="mobile">
+          <li class="project__item" data-type="frontend">
             <a href="https://kimyang-sun.github.io/fish-catch/" target="_blank">
               <img
                 src="img/pj_fish-game.jpg"
-                alt="물고기 잡기"
+                alt="project"
                 class="project__img"
               />
               <div class="project__description">
@@ -257,14 +299,14 @@
               </div>
             </a>
           </li>
-          <li class="project__item" data-type="mobile">
+          <li class="project__item" data-type="frontend">
             <a
               href="https://kimyang-sun.github.io/calculator-basic/"
               target="_blank"
             >
               <img
                 src="img/pj_calculator.jpg"
-                alt="계산기"
+                alt="project"
                 class="project__img"
               />
               <div class="project__description">
@@ -277,14 +319,14 @@
               </div>
             </a>
           </li>
-          <li class="project__item" data-type="mobile">
+          <li class="project__item" data-type="frontend">
             <a
               href="https://kimyang-sun.github.io/shopping-list-basic/"
               target="_blank"
             >
               <img
-                src="img/pj_shopping-list.jpg"
-                alt="쇼핑리스트"
+                src="img/pj_shopping-list-basic.jpg"
+                alt="project"
                 class="project__img"
               />
               <div class="project__description">
@@ -297,11 +339,11 @@
               </div>
             </a>
           </li>
-          <li class="project__item" data-type="web, mobile">
+          <li class="project__item" data-type="publishing">
             <a href="https://kimyang-sun.github.io/doctorpage/" target="_blank">
               <img
                 src="img/pj_doctorpage.jpg"
-                alt="닥터페이지"
+                alt="project"
                 class="project__img"
               />
               <div class="project__description">
@@ -316,11 +358,11 @@
               </div>
             </a>
           </li>
-          <li class="project__item" data-type="web, mobile">
+          <li class="project__item" data-type="publishing">
             <a href="http://www.xn--v20bz3b6xk8uxzff.com/" target="_blank">
               <img
                 src="img/pj_nangman.jpg"
-                alt="낭만컴퍼니"
+                alt="project"
                 class="project__img"
               />
               <div class="project__description">
@@ -335,9 +377,9 @@
               </div>
             </a>
           </li>
-          <li class="project__item" data-type="web, mobile">
+          <li class="project__item" data-type="publishing">
             <a href="https://kimyang-sun.github.io/booup/" target="_blank">
-              <img src="img/pj_booup.jpg" alt="부업몬" class="project__img" />
+              <img src="img/pj_booup.jpg" alt="project" class="project__img" />
               <div class="project__description">
                 <h3>부업몬<i class="fas fa-link"></i></h3>
                 <p>

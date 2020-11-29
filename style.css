@@ -685,7 +685,7 @@ html {
 }
 
 .work__categories .category__item .category__btn {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
   padding: 10px 20px;
   position: relative;
   transition: all 0.5s;
@@ -804,6 +804,14 @@ html {
 }
 
 @media (max-width: 520px) {
+  .work__categories .category__item {
+    margin: 0;
+  }
+
+  .work__categories .category__item .category__btn {
+    padding: 10px 15px;
+  }
+
   .project__item {
     flex-basis: 100%;
     max-width: 100%;
@@ -875,9 +883,6 @@ html {
 }
 
 /* Contact Responsive */
-@media (min-width: 521px) {
-}
-
 @media (max-width: 520px) {
   #contact {
     padding: 80px 0 0 !important;
